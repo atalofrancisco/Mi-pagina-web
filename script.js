@@ -15,20 +15,7 @@ let observadorScroll = null;
 // Datos de las galerías
 const galerias = {
     'unit-tracker': {
-        imagenes: [
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Login',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Dashboard',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Campaigns',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Details',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Extended',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Units',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Locate',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=New',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Stats',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Advanced',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Settings',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Extended'
-        ],
+        imagenes: Array.from({ length: 12 }, (_, i) => `assets/images/unit-tracker/${i + 1}.png`),
         nombres: [
             'Inicio de Sesión', 'Dashboard Principal', 'Lista de Campañas', 'Detalle de Campaña',
             'Detalle Ampliado', 'Vista de Unidades', 'Localizar Unidad', 'Nueva Campaña',
@@ -37,15 +24,15 @@ const galerias = {
         indiceActual: 0
     },
     'marketplace': {
-        imagenes: [
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Login',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Register',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Home',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Dark',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Filters',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Search',
-            'https://via.placeholder.com/200x400/1e5a8a/ffffff?text=Profile'
+        imagenes: Array.from({ length: 7 }, (_, i) => `assets/images/marketplace/${i + 1}.png`),
+        nombres: [
+            'Inicio de Sesión', 'Registro de Usuario', 'Home Dashboard', 'Home Modo Oscuro',
+            'Filtros Avanzados', 'Búsqueda Categorías', 'Mi Perfil'
         ],
+        indiceActual: 0
+    }
+};
+   
         nombres: [
             'Inicio de Sesión', 'Registro de Usuario', 'Home Dashboard', 'Home Modo Oscuro',
             'Filtros Avanzados', 'Búsqueda Categorías', 'Mi Perfil'
