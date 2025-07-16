@@ -1,2 +1,543 @@
 <!DOCTYPE html>
-<!-- contenido HTML completo proporcionado por el usuario -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atalo Francisco - Portfolio Desarrollador iOS</title>
+    <meta name="description" content="Desarrollador iOS especializado en SwiftUI y Firebase. Portfolio con proyectos reales y experiencia profesional.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div id="cursor-personalizado" class="cursor-personalizado"></div>
+    
+    <!-- Fondo de partículas -->
+    <div id="particulas-fondo" class="particulas-fondo"></div>
+    
+    <!-- Navegación -->
+    <header id="navegacion" class="navegacion">
+        <nav class="nav-container">
+            <button id="logo-btn" class="logo-btn">Atalo Francisco</button>
+            <div class="nav-menu">
+                <button class="nav-item active" data-section="inicio">
+                    <span class="nav-icon">🏠</span>Inicio
+                </button>
+                <button class="nav-item" data-section="acerca">
+                    <span class="nav-icon">👨‍💻</span>Acerca de
+                </button>
+                <button class="nav-item" data-section="habilidades">
+                    <span class="nav-icon">🚀</span>Habilidades
+                </button>
+                <button class="nav-item" data-section="proyectos">
+                    <span class="nav-icon">💼</span>Proyectos
+                </button>
+                <button class="nav-item" data-section="contacto">
+                    <span class="nav-icon">📧</span>Contacto
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="seccion-principal">
+        <div class="container">
+            <div class="perfil-imagen-container">
+                <img src="https://via.placeholder.com/150x150/1e5a8a/ffffff?text=AF" alt="Atalo Francisco" class="perfil-imagen" id="perfil-imagen">
+                <div class="perfil-brillo"></div>
+            </div>
+            
+            <div class="saludo-badge">
+                👋 ¡Hola! Soy Atalo Francisco
+            </div>
+
+            <h1 class="titulo-principal">
+                <span class="titulo-linea-1">Desarrollador iOS</span>
+                <br>
+                <span class="titulo-linea-2" id="texto-escrito">
+                    <span id="texto-animado">especializado en SwiftUI</span>
+                    <span id="cursor-parpadeante">|</span>
+                </span>
+            </h1>
+
+            <p class="descripcion-principal">
+                Creando aplicaciones iOS innovadoras con 
+                <span class="highlight">SwiftUI</span> y 
+                <span class="highlight">Firebase</span>.
+                <br>
+                Transformando ideas en experiencias móviles excepcionales.
+            </p>
+
+            <div class="tecnologias-grid">
+                <div class="tecnologia">Swift</div>
+                <div class="tecnologia">SwiftUI</div>
+                <div class="tecnologia">Firebase</div>
+                <div class="tecnologia">Xcode</div>
+                <div class="tecnologia">Face ID</div>
+                <div class="tecnologia">Core Data</div>
+            </div>
+
+            <div class="botones-principales">
+                <button class="btn-principal" onclick="window.open('https://github.com/atalofrancisco', '_blank')">
+                    🐙 GitHub
+                </button>
+                <button class="btn-principal" onclick="window.open('https://instagram.com/atalofrancisco', '_blank')">
+                    <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 11.37a4 4 0 1 1-7.74 0" stroke="currentColor" stroke-width="2"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    Instagram
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Acerca -->
+    <section id="acerca" class="seccion-acerca">
+        <div class="container">
+            <h2 class="titulo-seccion">Acerca de Mí</h2>
+            
+            <div class="acerca-grid">
+                <div class="acerca-texto">
+                    <p class="parrafo-principal">
+                        Soy un desarrollador iOS apasionado con más de 1 año de experiencia creando 
+                        aplicaciones móviles innovadoras. Me especializo en <strong>SwiftUI</strong> y 
+                        <strong>Firebase</strong>, enfocándome en crear experiencias de usuario 
+                        excepcionales y código limpio y mantenible.
+                    </p>
+                    
+                    <p class="parrafo-secundario">
+                        Mi pasión por el desarrollo móvil comenzó cuando vi el potencial de crear aplicaciones 
+                        que realmente impacten la vida de las personas. Desde entonces, he trabajado en proyectos 
+                        que van desde aplicaciones de seguimiento personal hasta plataformas de marketplace, 
+                        siempre buscando la excelencia en cada línea de código.
+                    </p>
+                </div>
+
+                <div class="habilidades-grid">
+                    <div class="habilidad-card">
+                        <div class="habilidad-icono">📱</div>
+                        <h3 class="habilidad-titulo">Desarrollo iOS</h3>
+                        <p class="habilidad-descripcion">SwiftUI, UIKit, Core Data</p>
+                    </div>
+                    <div class="habilidad-card">
+                        <div class="habilidad-icono">🔥</div>
+                        <h3 class="habilidad-titulo">Firebase</h3>
+                        <p class="habilidad-descripcion">Auth, Firestore, Storage</p>
+                    </div>
+                    <div class="habilidad-card">
+                        <div class="habilidad-icono">🎨</div>
+                        <h3 class="habilidad-titulo">UI/UX</h3>
+                        <p class="habilidad-descripcion">Diseño intuitivo y moderno</p>
+                    </div>
+                    <div class="habilidad-card">
+                        <div class="habilidad-icono">⚡</div>
+                        <h3 class="habilidad-titulo">Rendimiento</h3>
+                        <p class="habilidad-descripcion">Optimización y testing</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estadísticas -->
+            <div class="estadisticas-container">
+                <div class="estadisticas-grid">
+                    <div class="estadistica">
+                        <div class="estadistica-numero" data-final="1">0</div>
+                        <div class="estadistica-sufijo">+</div>
+                        <div class="estadistica-etiqueta">Años Experiencia</div>
+                    </div>
+                    <div class="estadistica">
+                        <div class="estadistica-numero" data-final="2">0</div>
+                        <div class="estadistica-sufijo"></div>
+                        <div class="estadistica-etiqueta">Apps Desarrolladas</div>
+                    </div>
+                    <div class="estadistica">
+                        <div class="estadistica-numero" data-final="2">0</div>
+                        <div class="estadistica-sufijo"></div>
+                        <div class="estadistica-etiqueta">Proyectos Activos</div>
+                    </div>
+                    <div class="estadistica">
+                        <div class="estadistica-numero" data-final="100">0</div>
+                        <div class="estadistica-sufijo">%</div>
+                        <div class="estadistica-etiqueta">Dedicación</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="seccion-habilidades">
+        <div class="container">
+            <h2 class="titulo-seccion">Habilidades Técnicas</h2>
+
+            <div class="habilidades-tecnicas-grid">
+                <div class="habilidad-tecnica">
+                    <div class="habilidad-header">
+                        <span class="habilidad-icono-tech">🟠</span>
+                        <h3 class="habilidad-nombre">Swift</h3>
+                        <span class="habilidad-porcentaje">90%</span>
+                    </div>
+                    <div class="habilidad-barra">
+                        <div class="habilidad-progreso" data-width="90"></div>
+                    </div>
+                </div>
+
+                <div class="habilidad-tecnica">
+                    <div class="habilidad-header">
+                        <span class="habilidad-icono-tech">🔷</span>
+                        <h3 class="habilidad-nombre">SwiftUI</h3>
+                        <span class="habilidad-porcentaje">85%</span>
+                    </div>
+                    <div class="habilidad-barra">
+                        <div class="habilidad-progreso" data-width="85"></div>
+                    </div>
+                </div>
+
+                <div class="habilidad-tecnica">
+                    <div class="habilidad-header">
+                        <span class="habilidad-icono-tech">🔥</span>
+                        <h3 class="habilidad-nombre">Firebase</h3>
+                        <span class="habilidad-porcentaje">80%</span>
+                    </div>
+                    <div class="habilidad-barra">
+                        <div class="habilidad-progreso" data-width="80"></div>
+                    </div>
+                </div>
+
+                <div class="habilidad-tecnica">
+                    <div class="habilidad-header">
+                        <span class="habilidad-icono-tech">🔨</span>
+                        <h3 class="habilidad-nombre">Xcode</h3>
+                        <span class="habilidad-porcentaje">88%</span>
+                    </div>
+                    <div class="habilidad-barra">
+                        <div class="habilidad-progreso" data-width="88"></div>
+                    </div>
+                </div>
+
+                <div class="habilidad-tecnica">
+                    <div class="habilidad-header">
+                        <span class="habilidad-icono-tech">🟢</span>
+                        <h3 class="habilidad-nombre">Jetpack Compose</h3>
+                        <span class="habilidad-porcentaje">70%</span>
+                    </div>
+                    <div class="habilidad-barra">
+                        <div class="habilidad-progreso" data-width="70"></div>
+                    </div>
+                </div>
+
+                <div class="habilidad-tecnica">
+                    <div class="habilidad-header">
+                        <span class="habilidad-icono-tech">📂</span>
+                        <h3 class="habilidad-nombre">Git</h3>
+                        <span class="habilidad-porcentaje">85%</span>
+                    </div>
+                    <div class="habilidad-barra">
+                        <div class="habilidad-progreso" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="otras-tecnologias">
+                <h3 class="otras-tecnologias-titulo">Otras Tecnologías</h3>
+                <div class="tecnologias-adicionales">
+                    <span class="tecnologia-adicional">Core Data</span>
+                    <span class="tecnologia-adicional">CloudKit</span>
+                    <span class="tecnologia-adicional">Notificaciones</span>
+                    <span class="tecnologia-adicional">MapKit</span>
+                    <span class="tecnologia-adicional">AVFoundation</span>
+                    <span class="tecnologia-adicional">StoreKit</span>
+                    <span class="tecnologia-adicional">WidgetKit</span>
+                    <span class="tecnologia-adicional">Combine</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="seccion-proyectos">
+        <div class="container">
+            <h2 class="titulo-seccion">Proyectos Destacados</h2>
+            <p class="subtitulo-seccion">Explora las capturas reales de mis aplicaciones iOS en funcionamiento</p>
+
+            <!-- Unit Tracker -->
+            <div class="proyecto">
+                <div class="proyecto-contenido">
+                    <div class="proyecto-header">
+                        <h3 class="proyecto-titulo">Unit Tracker</h3>
+                        <span class="proyecto-estado activo">En App Store Connect</span>
+                    </div>
+
+                    <div class="proyecto-destacado">
+                        ✓ 12 capturas reales del flujo completo - Aplicación empresarial completada
+                    </div>
+
+                    <p class="proyecto-descripcion">
+                        Sistema completo de localización y seguimiento de unidades desarrollado con SwiftUI y Firebase. 
+                        Aplicación de nivel empresarial con autenticación biométrica, gestión colaborativa de campañas, 
+                        localización granular, análisis estadístico avanzado con filtros temporales, configuración completa 
+                        de usuario y herramientas de soporte integradas.
+                    </p>
+
+                    <div class="proyecto-caracteristicas">
+                        <h4>Características principales:</h4>
+                        <div class="caracteristicas-grid">
+                            <div class="caracteristica">• Autenticación biométrica con Face ID</div>
+                            <div class="caracteristica">• Dashboard en tiempo real con métricas detalladas</div>
+                            <div class="caracteristica">• Gestión completa de campañas multiusuario</div>
+                            <div class="caracteristica">• Lista y filtrado avanzado de campañas activas</div>
+                            <div class="caracteristica">• Vista detallada con acciones rápidas</div>
+                            <div class="caracteristica">• Gestión granular de unidades con búsqueda por VIN</div>
+                            <div class="caracteristica">• Formulario completo de localización</div>
+                            <div class="caracteristica">• Sistema colaborativo de equipos y permisos</div>
+                        </div>
+                    </div>
+
+                    <div class="tecnologias-proyecto">
+                        <span class="tecnologia-tag">SwiftUI</span>
+                        <span class="tecnologia-tag">Firebase</span>
+                        <span class="tecnologia-tag">Face ID</span>
+                        <span class="tecnologia-tag">Core Data</span>
+                        <span class="tecnologia-tag">CloudKit</span>
+                    </div>
+                </div>
+
+                <div class="proyecto-galeria">
+                    <div class="galeria-container" id="galeria-unit-tracker">
+                        <div class="imagen-principal">
+                           <img src="assets/images/unit-tracker/IMG_2544.PNG" alt="Unit Tracker" class="imagen-app" id="imagen-unit-tracker">
+                            <div class="imagen-contador">1/12</div>
+                            <div class="imagen-real-badge">✓ Real</div>
+                        </div>
+                        
+                        <div class="imagen-titulo">Inicio de Sesión</div>
+                        
+                        <div class="galeria-controles">
+                            <button class="galeria-btn" onclick="anteriorImagen('unit-tracker')">←</button>
+                            <div class="galeria-info">1 de 12</div>
+                            <button class="galeria-btn" onclick="siguienteImagen('unit-tracker')">→</button>
+                        </div>
+
+                        <div class="miniaturas">
+                            <div class="miniatura active" data-index="0"></div>
+                            <div class="miniatura" data-index="1"></div>
+                            <div class="miniatura" data-index="2"></div>
+                            <div class="miniatura" data-index="3"></div>
+                            <div class="miniatura" data-index="4"></div>
+                            <div class="miniatura" data-index="5"></div>
+                            <div class="miniatura" data-index="6"></div>
+                            <div class="miniatura" data-index="7"></div>
+                            <div class="miniatura" data-index="8"></div>
+                            <div class="miniatura" data-index="9"></div>
+                            <div class="miniatura" data-index="10"></div>
+                            <div class="miniatura" data-index="11"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MarketPlace iOS -->
+            <div class="proyecto proyecto-invertido">
+                <div class="proyecto-galeria">
+                    <div class="galeria-container" id="galeria-marketplace">
+                        <div class="imagen-principal">
+                           <img src="assets/images/marketplace/IMG_2557.PNG" alt="MarketPlace iOS" class="imagen-app" id="imagen-marketplace">
+                            <div class="imagen-contador">1/7</div>
+                            <div class="imagen-real-badge">✓ Real</div>
+                        </div>
+                        
+                        <div class="imagen-titulo">Inicio de Sesión</div>
+                        
+                        <div class="galeria-controles">
+                            <button class="galeria-btn" onclick="anteriorImagen('marketplace')">←</button>
+                            <div class="galeria-info">1 de 7</div>
+                            <button class="galeria-btn" onclick="siguienteImagen('marketplace')">→</button>
+                        </div>
+
+                        <div class="miniaturas">
+                            <div class="miniatura active" data-index="0"></div>
+                            <div class="miniatura" data-index="1"></div>
+                            <div class="miniatura" data-index="2"></div>
+                            <div class="miniatura" data-index="3"></div>
+                            <div class="miniatura" data-index="4"></div>
+                            <div class="miniatura" data-index="5"></div>
+                            <div class="miniatura" data-index="6"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto-contenido">
+                    <div class="proyecto-header">
+                        <h3 class="proyecto-titulo">MarketPlace iOS</h3>
+                        <span class="proyecto-estado desarrollo">En desarrollo</span>
+                    </div>
+
+                    <div class="proyecto-destacado">
+                        ✓ 7 capturas reales del flujo completo - Sistema de marketplace completado
+                    </div>
+
+                    <p class="proyecto-descripcion">
+                        Plataforma de marketplace móvil completa con sistema de autenticación, registro de usuarios, 
+                        dashboard principal, modo oscuro, filtros avanzados, búsqueda por categorías y perfil de usuario. 
+                        Desarrollada con SwiftUI y diseño nativo iOS, incluye sistema completo de navegación, gestión de 
+                        productos, estadísticas personalizadas y experiencia de usuario optimizada.
+                    </p>
+
+                    <div class="proyecto-caracteristicas">
+                        <h4>Características principales:</h4>
+                        <div class="caracteristicas-grid">
+                            <div class="caracteristica">• Sistema de autenticación completo con validación</div>
+                            <div class="caracteristica">• Registro de usuarios con formulario detallado</div>
+                            <div class="caracteristica">• Dashboard principal con búsqueda avanzada</div>
+                            <div class="caracteristica">• Modo oscuro nativo integrado</div>
+                            <div class="caracteristica">• Filtros avanzados (precio, condición, ordenamiento)</div>
+                            <div class="caracteristica">• Búsqueda por categorías (Electrónicos, Ropa, Hogar)</div>
+                            <div class="caracteristica">• Perfil de usuario con estadísticas personalizadas</div>
+                            <div class="caracteristica">• Sistema de rating y reputación</div>
+                        </div>
+                    </div>
+
+                    <div class="tecnologias-proyecto">
+                        <span class="tecnologia-tag">SwiftUI</span>
+                        <span class="tecnologia-tag">Firebase</span>
+                        <span class="tecnologia-tag">Stripe</span>
+                        <span class="tecnologia-tag">MapKit</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="colaboracion-cta">
+                <h3>¿Interesado en colaborar?</h3>
+                <p>Siempre estoy abierto a nuevos proyectos y oportunidades emocionantes. ¡Hablemos sobre tu próxima aplicación iOS!</p>
+                <button class="btn-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">
+                    Contactar ahora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="seccion-contacto">
+        <div class="container">
+            <h2 class="titulo-seccion">Contacto</h2>
+
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <h3>¡Hablemos!</h3>
+                    
+                    <p class="contacto-descripcion">
+                        Estoy siempre abierto a nuevas oportunidades y proyectos interesantes. 
+                        Si tienes una idea o simplemente quieres charlar sobre desarrollo iOS, 
+                        no dudes en contactarme.
+                    </p>
+
+                    <div class="contacto-items">
+                        <div class="contacto-item">
+                            <span class="contacto-icono">📧</span>
+                            <span>atalofrancisco@icloud.com</span>
+                        </div>
+                        <div class="contacto-item">
+                            <svg class="instagram-icon-small" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 11.37a4 4 0 1 1-7.74 0" stroke="currentColor" stroke-width="2"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>@atalofrancisco</span>
+                        </div>
+                    </div>
+
+                    <div class="redes-sociales">
+                        <button class="red-social" onclick="window.open('https://github.com/atalofrancisco', '_blank')">
+                            🐙 GitHub
+                        </button>
+                        <button class="red-social" onclick="window.open('https://instagram.com/atalofrancisco', '_blank')">
+                            <svg class="instagram-icon-small" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 11.37a4 4 0 1 1-7.74 0" stroke="currentColor" stroke-width="2"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            Instagram
+                        </button>
+                    </div>
+                </div>
+
+                <form id="contacto-form" class="formulario-contacto">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntame sobre tu proyecto o idea..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Atalo Francisco</h3>
+                    <p>Desarrollador iOS especializado en SwiftUI y Firebase. Creando aplicaciones móviles que marcan la diferencia.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <div class="footer-nav">
+                        <button onclick="scrollToSection('inicio')">Inicio</button>
+                        <button onclick="scrollToSection('acerca')">Acerca de</button>
+                        <button onclick="scrollToSection('habilidades')">Habilidades</button>
+                        <button onclick="scrollToSection('proyectos')">Proyectos</button>
+                        <button onclick="scrollToSection('contacto')">Contacto</button>
+                    </div>
+                </div>
+
+                <div class="footer-contacto">
+                    <h4>Contacto</h4>
+                    <p>📧 atalofrancisco@icloud.com</p>
+                    <div class="footer-instagram">
+                        <svg class="instagram-icon-small" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 11.37a4 4 0 1 1-7.74 0" stroke="currentColor" stroke-width="2"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>@atalofrancisco</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Atalo Francisco. Todos los derechos reservados.</p>
+                <p>Desarrollado por Atalo Francisco usando HTML, CSS y JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para imágenes -->
+    <div id="modal-imagen" class="modal-imagen">
+        <div class="modal-contenido">
+            <img id="modal-img" src="" alt="">
+            <div id="modal-titulo" class="modal-titulo"></div>
+            <button class="modal-cerrar" onclick="cerrarModal()">×</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
