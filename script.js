@@ -12,10 +12,23 @@ let audioContext = null;
 let seccionActiva = 'inicio';
 let observadorScroll = null;
 
-// Datos de las galerías
+// Datos de las galerías con rutas locales reales
 const galerias = {
     'unit-tracker': {
-        imagenes: Array.from({ length: 12 }, (_, i) => `assets/images/unit-tracker/${i + 1}.png`),
+        imagenes: [
+            'assets/images/unit-tracker/IMG_2544.PNG',
+            'assets/images/unit-tracker/IMG_2545.PNG',
+            'assets/images/unit-tracker/IMG_2546.PNG',
+            'assets/images/unit-tracker/IMG_2547.PNG',
+            'assets/images/unit-tracker/IMG_2548.PNG',
+            'assets/images/unit-tracker/IMG_2549.PNG',
+            'assets/images/unit-tracker/IMG_2550.PNG',
+            'assets/images/unit-tracker/IMG_2551.PNG',
+            'assets/images/unit-tracker/IMG_2552.PNG',
+            'assets/images/unit-tracker/IMG_2553.PNG',
+            'assets/images/unit-tracker/IMG_2554.PNG',
+            'assets/images/unit-tracker/IMG_2555.PNG'
+        ],
         nombres: [
             'Inicio de Sesión', 'Dashboard Principal', 'Lista de Campañas', 'Detalle de Campaña',
             'Detalle Ampliado', 'Vista de Unidades', 'Localizar Unidad', 'Nueva Campaña',
@@ -24,15 +37,15 @@ const galerias = {
         indiceActual: 0
     },
     'marketplace': {
-        imagenes: Array.from({ length: 7 }, (_, i) => `assets/images/marketplace/${i + 1}.png`),
-        nombres: [
-            'Inicio de Sesión', 'Registro de Usuario', 'Home Dashboard', 'Home Modo Oscuro',
-            'Filtros Avanzados', 'Búsqueda Categorías', 'Mi Perfil'
+        imagenes: [
+            'assets/images/marketplace/IMG_2557.PNG',
+            'assets/images/marketplace/IMG_2558.PNG',
+            'assets/images/marketplace/IMG_2559.PNG',
+            'assets/images/marketplace/IMG_2560.PNG',
+            'assets/images/marketplace/IMG_2561.PNG',
+            'assets/images/marketplace/IMG_2562.PNG',
+            'assets/images/marketplace/IMG_2563.PNG'
         ],
-        indiceActual: 0
-    }
-};
-   
         nombres: [
             'Inicio de Sesión', 'Registro de Usuario', 'Home Dashboard', 'Home Modo Oscuro',
             'Filtros Avanzados', 'Búsqueda Categorías', 'Mi Perfil'
